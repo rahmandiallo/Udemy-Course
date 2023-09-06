@@ -1,4 +1,4 @@
-FILEPATH = "todos_item.txt"
+FILEPATH = "todos.txt"
 
 
 def get_todos(filepath = FILEPATH):
@@ -16,6 +16,8 @@ def write_todos(todos_arg,filepath=FILEPATH):
         file.writelines(todos_arg)
 
 print(__name__)
+
+#two lines are executed when functions.py is executed directly 
 if __name__ == "__main__":
     print("Hello")
     print(get_todos())
